@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FREE FULL</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #fff;
+            padding: 40px 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 24px;
+            margin: 20px 0;
+            color: #333;
+        }
+        .card {
+            background-color: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .card img {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .card p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .card .number {
+            font-weight: bold;
+            color: #333;
+        }
+        .card button {
+            background-color: #007aff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .card button:hover {
+            background-color: #0051a8;
+        }
+        .notice {
+            background-color: #ffeb3b;
+            color: #333;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 18px;
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .footer {
+            margin: 20px 0;
+        }
+        .footer p {
+            font-size: 16px;
+            color: #ff6f61;
+        }
+        .btn-wallet {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #fff;
+            border-radius: 8px;
+            background: url('https://developer.apple.com/wallet/add-to-apple-wallet-guidelines/images/button-two-line-large_2x.png') no-repeat center center;
+            background-size: contain;
+            width: 320px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            transition: opacity 0.3s;
+        }
+        .btn-wallet:hover {
+            opacity: 0.8;
+        }
+        @media (max-width: 600px) {
+            .card {
+                padding: 15px;
+            }
+            .btn-wallet {
+                width: 280px;
+                height: 45px;
+                line-height: 45px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FREE FULL</h1>
+    </header>
+    <div class="container">
+        <h2>¿Qué es FREE FULL?</h2>
+        <p>Los cines del centro comercial Splau, antes conocidos como "FULL HD CINEMES", lamentablemente ahora son propiedad de Kinepolis canviando el nombre a "Kinepolis Barcelona Splau".</p>
+        <p>Con la llegada de esta nueva empresa, todos nos imaginábamos una nueva vida para estos cines y lamentablemente, solo han conseguido matarlos aún más. Subiendo los precios y agregando condiciones malísimas para nosotros, los consumidores.</p>
+        <p>Ahora, para conseguir algunas ventajas que los usuarios de FULL ya teníamos, hemos de registrarnos en su nuevo programa de "amigos", luego hemos de completar nuestro perfil al 80% con nuestros datos (y no son pocos), y para acabar hemos de rezar para que a la plataforma de Kinepolis no le dé por fallar y nos asigne por fin una tarjeta.<p>
+        <p>Tras eso tendrás que comprar las entradas en su página web que falla un montón y meter el código de tu tarjeta. Por eso hemos decidido crear FREE FULL para que los usuarios no tengamos que pelearnos con una plataforma horrible que recopila datos innecesarios. Intentaremos actualizar las tarjetas, aunque probablemente Kinepolis las retire (como ya retira cuentas funcionales y auténticas)</p>
+
+        <h2>Tarjetas Disponibles</h2>
+        <!-- Card 1 -->
+        <div class="card">
+            <h3>TARJETA 1</h3>
+            <img src="https://i.ibb.co/x870yXR/card1.png" alt="QR Code">
+            <p class="number" id="card-number-1">72232157183475</p>
+            <button onclick="copyToClipboard('card-number-1')">Copiar Número</button>
+        </div>
+        <div class="card">
+            <h3>TARJETA 2</h3>
+            <img src="https://i.postimg.cc/WpZLpzXs/card2.png" alt="QR Code">
+            <p class="number" id="card-number-1">72237779124356</p>
+            <button onclick="copyToClipboard('card-number-1')">Copiar Número</button>
+        </div>
+        
+
+        <p class="notice">
+            Lamentamos las molestias. Es probable que Kinepolis retire los códigos de las tarjetas.
+        </p>
+    </div>
+
+    <div class="footer">
+        <p>#Volvamos a Full</p>
+    </div>
+
+    <script>
+        function copyToClipboard(elementId) {
+            var textToCopy = document.getElementById(elementId).innerText;
+            navigator.clipboard.writeText(textToCopy).then(function() {
+                alert('Número copiado al portapapeles: ' + textToCopy);
+            }, function(err) {
+                console.error('Error al copiar el número: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
