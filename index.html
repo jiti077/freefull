@@ -227,6 +227,45 @@
             margin: 10px 0;
             color: #555;
         }
+        .promo-section {
+            background-color: #f0f4f8;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+            max-width: 700px;
+            margin: 30px auto;
+            text-align: left;
+        }
+        .promo-section h3 {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #333;
+            display: flex;
+            align-items: center;
+        }
+        .promo-section p {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #555;
+        }
+        .promo-buttons {
+            margin-top: 15px;
+        }
+        .promo-buttons button {
+            background-color: #007aff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .promo-buttons button:hover {
+            background-color: #0051a8;
+        }
     </style>
 </head>
 <body>
@@ -240,6 +279,7 @@
         <p>Ahora, para conseguir algunas ventajas que los usuarios de FULL ya teníamos, hemos de registrarnos en su nuevo programa de "amigos", luego hemos de completar nuestro perfil al 80% con nuestros datos (y no son pocos), y para acabar hemos de rezar para que a la plataforma de Kinepolis no le dé por fallar y nos asigne por fin una tarjeta.</p>
         <p>Por eso en FREEFULL os ofrecemos algunas tarjetas del grupo de amigos para que uséis si las vuestras no funcionan (típico de Kinepolis), os las retiran por la cara u otros motivos.</p>
         <p>También ofrecemos algunos consejos y ayudas para luchas contra algunas prácticas abusivas del cine.</p>
+
         
         <h2>Tarjetas Disponibles</h2>
         <!-- Card 1 -->
@@ -263,7 +303,20 @@
             <p class="number" id="card-number-3">72234862910839</p>
             <button onclick="copyToClipboard('card-number-3')">Copiar Número</button>
         </div>
-
+        <!-- Card 4 -->
+        <div class="card">
+            <h3>TARJETA 4</h3>
+            <img src="https://i.ibb.co/xMMSt3N/card4.png" alt="QR Code">
+            <p class="number" id="card-number-4">72237203020613</p>
+            <button onclick="copyToClipboard('card-number-4')">Copiar Número</button>
+        </div>
+         <!-- Card 5 -->
+         <div class="card">
+            <h3>TARJETA 5</h3>
+            <img src="https://i.ibb.co/1QvGNHT/card5.png" alt="QR Code">
+            <p class="number" id="card-number-5">72231799786897</p>
+            <button onclick="copyToClipboard('card-number-5')">Copiar Número</button>
+        </div>
         <div class="section">
             <h3><i class="fas fa-info-circle icon"></i> Consejos para tu Visita</h3>
             <div class="info-box">
@@ -300,12 +353,21 @@
             </div>
         </div>
 
+        <div class="promo-section">
+            <h3><i class="fas fa-gift icon"></i>Consigue tu 2X1</h3>
+            <p>De lunes a jueves puedes tener un 2X1 en tus entradas normales de cine. Si vas matinal no te deverian negar la promoción (eso si pagaras el precio de una entrada regular 9,9 €). Pide amablemente al personal que te aplique la oferta al precio regular, ya que la descripción de la promoción no dice que no sirva para matinal. Primero muestra la promoción y luego esta tarjeta Splau (no la escanean en taquilla así que todo tu grupo puede usar la misma). Si no te la aplican haz una reclamación e intenta por todas las vias conseguir la oferta.</p>
+            <div class="promo-buttons">
+                <button onclick="window.location.href='https://i.ibb.co/nBYm97g/promo.jpg'">Imagen 1 - Promoción</button>
+                <button onclick="window.location.href='https://i.ibb.co/2ckC5hc/card.jpg'">Imagen 2 - Tarjeta</button>
+            </div>
+        </div>
+
         <div class="section reviews">
             <h3><i class="fas fa-star icon"></i> Reseñas</h3>
             <div class="review">
                 <h4>The CrossTeam - Google Maps</h4>
-                <p>"Una vergüenza. Sacan a la gente de la sala usando la fuerza y a empujones por traer unas patatas, agua y refresco. Los vigilantes y personal del cine se encaran de muy mala manera y ejercen abuso sobre el cliente que no hace más que ejercer su derecho a comer algo discretamente mientras ve la película. No vuelvo a pisar un cine yelmo en mi vida. Es una vergüenza. Jamás imaginé un trato así a un espectador. Indignante. Despreciable. Solo espero que esa gente no vuelva a trabajar de cara al público en la vida"</p>
-                <a href="https://maps.app.goo.gl/Bt6LEAM5im62gBxe8">Ver Reseña</a>
+                <p>"Una vergüenza. Sacan a la gente de la sala usando la fuerza y a empujones por traer unas patatas, agua y refresco. Los vigilantes y personal del cine se encaran de muy mala manera y ejercen abuso sobre el cliente que no hace más que ejercer su derecho a comer algo discretamente mientras ve la película"</p>
+                <a href="https://maps.app.goo.gl/Bt6LEAM5im62gBxe8">Ver Reseña Completa</a>
             </div>
             <div class="review">
                 <h4>Victor EM - Google Maps</h4>
@@ -316,7 +378,7 @@
             <div class="review">
                 <h4>Sr.J0K3R - Google Maps</h4>
                 <p>“Antiguamente, cines full, precios increíbles facilidades de compra de entrada por la web 0 problemas, iba 1 vez al mes. Actualmente KINEPOLIS...  Mala gestión de web, nada intuitiva, tienes que rellenar una biblia para que te den tu tarjeta de fidelidad la cual, no sirve de mucho ya que los precios son excesivamente caros. Por no decir que marcas dos entradas y te pone 4, vuelvo a salir y entrar marco dos entradas, esta vez me pone 6 entradas... Sabéis hacer algo bien? Una vergüenza, habéis perdido a un cliente habitual y estoy seguro que no soy el único, me cobraron 16 euros por una palomera de elemental, la excusa es que vienen 2 bebidas la palomera y un póster el cual no tienen disponible en el momento de estreno así que me tocará volver otro día hasta ese cine solo para el póster, y para que quiero dos bebidas? Dónde las pongo? Una en el suelo y la otra en mi parte de mi asiento? Una p vergüenza, ojalá cambie de empresa porque como empresa Kinépolis es muy incompetente.”</p>
-                <a href="https://maps.app.goo.gl/RfWcoR7Ps9j55aqR6">Ver Reseña</a>
+                <a href="https://maps.app.goo.gl/RfWcoR7Ps9j55aqR6">Ver Reseña Completa</a>
             </div>
             <div class="review">
                 <h4>Sergio Alonso Iñarra - Google Maps</h4>
