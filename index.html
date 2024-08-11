@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FREE FULL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -122,6 +123,110 @@
                 line-height: 45px;
             }
         }
+        .section {
+            margin: 30px 0;
+        }
+        .section h3 {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+        }
+        .section p {
+            font-size: 16px;
+            margin: 10px 0;
+            line-height: 1.5;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .icon {
+            font-size: 24px;
+            margin-right: 10px;
+            color: #007aff;
+        }
+        .info-box {
+            background-color: #f0f4f8;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            text-align: left;
+        }
+        .info-box svg {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            color: #007aff;
+        }
+        .reviews {
+            margin-top: 20px;
+        }
+        .review {
+            background-color: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .review h4 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+        .review p {
+            margin: 5px 0;
+            font-size: 16px;
+            color: #555;
+        }
+        .alert-box {
+            background-color: #fffa61;
+            color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 700px;
+            margin: 20px auto;
+            box-sizing: border-box;
+        }
+        .alert-box svg {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            color: #fff;
+        }
+        .tricks {
+            background-color: #f0f4f8;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 30px;
+            max-width: 700px;
+            margin: 20px auto;
+            text-align: left;
+        }
+        .tricks h3 {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #333;
+        }
+        .tricks p {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #555;
+        }
     </style>
 </head>
 <body>
@@ -130,10 +235,10 @@
     </header>
     <div class="container">
         <h2>¿Qué es FREE FULL?</h2>
-        <p>Los cines del centro comercial Splau, antes conocidos como "FULL HD CINEMES", lamentablemente ahora son propiedad de Kinepolis canviando el nombre a "Kinepolis Barcelona Splau".</p>
+        <p>Los cines del centro comercial Splau, antes conocidos como "FULL HD CINEMAS", lamentablemente ahora son propiedad de Kinepolis cambiando el nombre a "Kinepolis Barcelona Splau".</p>
         <p>Con la llegada de esta nueva empresa, todos nos imaginábamos una nueva vida para estos cines y lamentablemente, solo han conseguido matarlos aún más. Subiendo los precios y agregando condiciones malísimas para nosotros, los consumidores.</p>
-        <p>Ahora, para conseguir algunas ventajas que los usuarios de FULL ya teníamos, hemos de registrarnos en su nuevo programa de "amigos", luego hemos de completar nuestro perfil al 80% con nuestros datos (y no son pocos), y para acabar hemos de rezar para que a la plataforma de Kinepolis no le dé por fallar y nos asigne por fin una tarjeta.<p>
-        <p>Tras eso tendrás que comprar las entradas en su página web que falla un montón y meter el código de tu tarjeta. Por eso hemos decidido crear FREE FULL para que los usuarios no tengamos que pelearnos con una plataforma horrible que recopila datos innecesarios. Intentaremos actualizar las tarjetas, aunque probablemente Kinepolis las retire (como ya retira cuentas funcionales y auténticas)</p>
+        <p>Ahora, para conseguir algunas ventajas que los usuarios de FULL ya teníamos, hemos de registrarnos en su nuevo programa de "amigos", luego hemos de completar nuestro perfil al 80% con nuestros datos (y no son pocos), y para acabar hemos de rezar para que a la plataforma de Kinepolis no le dé por fallar y nos asigne por fin una tarjeta.</p>
+        <p>Tras eso tendrás que comprar las entradas en su página web que falla un montón y meter el código de tu tarjeta. Por eso hemos decidido crear FREE FULL para que los usuarios no tengamos que pelearnos con una plataforma horrible que recopila datos innecesarios. Intentaremos actualizar las tarjetas, aunque probablemente Kinepolis las retire (como ya retira cuentas funcionales y auténticas).</p>
 
         <h2>Tarjetas Disponibles</h2>
         <!-- Card 1 -->
@@ -143,19 +248,87 @@
             <p class="number" id="card-number-1">72232157183475</p>
             <button onclick="copyToClipboard('card-number-1')">Copiar Número</button>
         </div>
+        <!-- Card 2 -->
         <div class="card">
             <h3>TARJETA 2</h3>
             <img src="https://i.postimg.cc/WpZLpzXs/card2.png" alt="QR Code">
-            <p class="number" id="card-number-1">72237779124356</p>
-            <button onclick="copyToClipboard('card-number-1')">Copiar Número</button>
+            <p class="number" id="card-number-2">72237779124356</p>
+            <button onclick="copyToClipboard('card-number-2')">Copiar Número</button>
         </div>
-        
 
-        <p class="notice">
-            Lamentamos las molestias. Es probable que Kinepolis retire los códigos de las tarjetas.
-        </p>
+        <div class="section">
+            <h3><i class="fas fa-info-circle icon"></i> Consejos para tu Visita</h3>
+            <div class="info-box">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 14.27V4c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v10.27c-1.1.48-2 1.59-2 2.73v1c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-1c0-1.14-.9-2.25-2-2.73zm-2 4H5v-2h14v2zm-7-6h2v2h-2v-2zm0-4h2v2h-2V8zm0 8h2v2h-2v-2z"/></svg>
+                <p>Utiliza las tarjetas de FREE FULL si la tuya no funciona, Kinepolis te la ha retirado o no te la ha entregado. No toleres malos comportamientos y quejate de todo lo que no esté a tu gusto. Recuerda que tienes derecho a pedir hojas de reclamaciones.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3><i class="fas fa-gavel icon"></i> Información Legal</h3>
+            <div class="info-box">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                <p>En cataluña es legal que te prohiban entrar comida al cine. Aunque siguiendo la ley, el personal del cine NUNCA podrá revisar tus mochilas (solo policías). Si el personal no te deja entrar puedes pedir un reembolso TOTAL de tu entrada, presentar una hoja de reclamaciones y si hay contacto físico, llamar a la policía.</p>
+            </div>
+            <!-- Nueva sección de aviso sobre la hoja de reclamaciones -->
+            <div class="alert-box">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                <p>Kinepolis está obligado a entregarte una hoja de reclamaciones estés dentro o fuera del local. Si no lo hace, llama de inmediato a la policía, ya que es un derecho de los consumidores aunque se te haya negado el acceso.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3><i class="fas fa-exclamation-triangle icon"></i> Cómo Presentar una Hoja de Reclamaciones</h3>
+            <div class="info-box">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                <p>Si tienes problemas, sigue estos pasos:</p>
+                <ol>
+                    <li>Intenta resolver el incidente verbalmente.</li>
+                    <li>Graba el incidente si es posible.</li>
+                    <li>Pide hablar con un supervisor y explica la situación mostrando el video.</li>
+                    <li>Pide, rellena y presenta una hoja de reclamaciones.</li>
+                    <li>Si sufres daños o contacto, informa a las autoridades.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="section reviews">
+            <h3><i class="fas fa-star icon"></i> Reseñas</h3>
+            <div class="review">
+                <h4>The CrossTeam - Google Maps</h4>
+                <p>"Una vergüenza. Sacan a la gente de la sala usando la fuerza y a empujones por traer unas patatas, agua y refresco. Los vigilantes y personal del cine se encaran de muy mala manera y ejercen abuso sobre el cliente que no hace más que ejercer su derecho a comer algo discretamente mientras ve la película. No vuelvo a pisar un cine yelmo en mi vida. Es una vergüenza. Jamás imaginé un trato así a un espectador. Indignante. Despreciable. Solo espero que esa gente no vuelva a trabajar de cara al público en la vida"</p>
+                <a href="https://maps.app.goo.gl/Bt6LEAM5im62gBxe8">Ver Reseña</a>
+            </div>
+            <div class="review">
+                <h4>Victor EM - Google Maps</h4>
+                <p>“Casi no me dejan entrar al cine por traer una bebida que traía del propio centro comercial. Seguid con estas políticas con vuestros clientes que vais a conseguir que los cines mueran aun más rápido. Desde que se inauguró el Splau siempre he venido a estos cines. Pero cada vez tengo menos motivos para ello, entre el precio de las entradas y estas políticas anti consumidor. Solo lo hacía por la versión original pero ya ni merece la pena. Ya sabéis, si vais a estos cines, esconded la comida que traigáis de fuera.”</p>
+                <a href="https://maps.app.goo.gl/mj1Fv2beHiLUQpHZ7">Ver Reseña</a>
+                
+            </div>
+            <div class="review">
+                <h4>Sr.J0K3R - Google Maps</h4>
+                <p>“Antiguamente, cines full, precios increíbles facilidades de compra de entrada por la web 0 problemas, iba 1 vez al mes. Actualmente KINEPOLIS...  Mala gestión de web, nada intuitiva, tienes que rellenar una biblia para que te den tu tarjeta de fidelidad la cual, no sirve de mucho ya que los precios son excesivamente caros. Por no decir que marcas dos entradas y te pone 4, vuelvo a salir y entrar marco dos entradas, esta vez me pone 6 entradas... Sabéis hacer algo bien? Una vergüenza, habéis perdido a un cliente habitual y estoy seguro que no soy el único, me cobraron 16 euros por una palomera de elemental, la excusa es que vienen 2 bebidas la palomera y un póster el cual no tienen disponible en el momento de estreno así que me tocará volver otro día hasta ese cine solo para el póster, y para que quiero dos bebidas? Dónde las pongo? Una en el suelo y la otra en mi parte de mi asiento? Una p vergüenza, ojalá cambie de empresa porque como empresa Kinépolis es muy incompetente.”</p>
+                <a href="https://maps.app.goo.gl/RfWcoR7Ps9j55aqR6">Ver Reseña</a>
+            </div>
+            <div class="review">
+                <h4>Sergio Alonso Iñarra - Google Maps</h4>
+                <p>"Mejorar vuestra página web, 20 minutos para ir de una página a otra para seleccionar butacas. Desde que no sois FULL HD, SOIS LOS PEORES CINES DE BARCELONA!!"<p>
+                <a href="https://maps.app.goo.gl/Yki69kWJgnriBhBp6">Ver Reseña</a>
+            </div>
+        </div>
+
+
+        <!-- Nueva sección de trucos -->
+        <div class="tricks">
+            <h3><i class="fas fa-lightbulb icon"></i> Alternativas</h3>
+            <p><strong>CINESA LUXE La Farga:</strong> Ofrecen un servicio de suscripción anual (+18) para ver todas las películas que quieras, mucho mejor que lo que ofrece Kinepolis con 1 entrada al mes. (Asientos reclinables sin precio extra)</p>
+            <p><strong>CINES FILMAX Gran Via:</strong> Ofrecen sesiones 3D mucho más baratas que en Kinepolis con mejor calidad de imagen y servicio (9,5€ 3D fines de semana con tarjeta fidelidad solo con mail) VS Kinepolis 11,9€ 3D entre semana.</p>
+            <p><strong>CINEMES VERDI:</strong> Ofrecen sesiones a menos de 5€ en VOSE con mejor calidad de servicio.</p>
+        </div>
     </div>
-
+    <p class="notice">
+        Lamentamos las molestias. Es probable que Kinepolis retire los códigos de las tarjetas.
+    </p>
     <div class="footer">
         <p>#Volvamos a Full</p>
     </div>
